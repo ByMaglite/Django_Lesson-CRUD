@@ -1,0 +1,17 @@
+{% extends 'fscohort/base.html' %} {% block content %}
+<h3>
+
+    Delete Student</h3>
+<div>
+    <form action="" , method="POST">
+        {% csrf_token %} Are you sure delete {{student}}?<br>
+        <input type="submit" value="Yes">
+
+    </form>
+
+    <a href="{% url 'list'%}">
+        <button>
+No
+</button></a>
+</div>
+{% endblock content %}
